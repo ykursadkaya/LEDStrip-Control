@@ -36,7 +36,7 @@ if [ "$#" -eq 1 ]; then
     printf "%s -> Wrong usage!\nSee led -h for details.\n" "led $1"
   fi
 elif [ "$#" -eq 3 ]; then
-  if [[ $1 -ge 0 && $1 -le 1023 ]] && [[ $1 -ge 0 && $2 -le 1023 ]] && [[ $1 -ge 0 && $3 -le 1023 ]]; then
+  if [[ $1 -ge 0 && $1 -le 1023 ]] && [[ $2 -ge 0 && $2 -le 1023 ]] && [[ $3 -ge 0 && $3 -le 1023 ]]; then
     red_val=$1
     green_val=$2
     blue_val=$3
